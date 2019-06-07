@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% for object in object_list  %}
+    <span>{{ object.name }} </span><a href="{% url 'update-student' pk=object.pk %}">Edit</a>
+    <br>
+    {% endfor %}
+  </body>
+</html>
